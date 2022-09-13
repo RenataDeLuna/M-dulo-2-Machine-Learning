@@ -36,7 +36,10 @@ def main():
     df_x = df.drop(['satisfaction'], axis=1)
     df_y = df['satisfaction']
 
+    # Example 1
+
     # Spliting the data into train and test
+
     X_train, X_test, y_train, y_test = train_test_split(df_x, df_y, test_size = 0.20)
 
     # Making the linear regression model and the calculation of its score
@@ -65,6 +68,8 @@ def main():
 
     # Dividing the DF into train/test samples, but bigger
 
+    print("Example 2")
+
     print("Test size of 50%")
 
     X_train2, X_test2, y_train2, y_test2 = train_test_split(df_x, df_y, test_size = 0.50)
@@ -90,7 +95,8 @@ def main():
     print('MAE: ', str(mae2))
     print('MSE: ', str(mse2))
 
-        # Dividing the DF into train/test samples, but smaller
+    # Dividing the DF into train/test samples, but smaller
+    print("Example 3")
 
     print("Test size of 10%")
 
